@@ -1,0 +1,15 @@
+<!-- directorio.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegulonDB MicroServices</title>
+</head>
+<body>
+    <h1><%= nameDir %> content</h1>
+    <ul>
+        <% files.forEach(file => { %>
+            <li><a href="<%= `${url}${file}` %>"><%= file %></a></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
